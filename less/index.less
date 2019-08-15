@@ -50,10 +50,68 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border:1px solid red;
 }
 
 html, body {
-    height: 100%;
+	width: 90vw;
+	font-size:62.5%;
+}
+@titleFont{
+	'Josefin Sans', serif;
+}
+@headercolor{
+	background-color:#dab3bc;
 }
 
+h1{
+	font-family: @titleFont;
+	font-size: 3rem;
+}
+h2{
+	font-family: @titleFont;
+	font-size: 2rem;
+}
+h3{
+	font-family: @titleFont;
+	font-size: 1.5rem;
+}
+h4{
+	font-family: @titleFont;
+	font-size: 1rem;
+}
+.centered{
+	display: flex;
+	align-items:center;
+	justify-content:center;}
+
+.section-title{
+	font-family: @titleFont;
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	text-align: center;}
+
+.navIcons{
+	color:black;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;}
+
+
+@media (max-width: 500px) {}
+
+header{
+	background-color: @headercolor;
+	width:90vw;
+	height:20vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;}
+	
+
+
+.name{
+
+}

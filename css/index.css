@@ -129,8 +129,42 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  border: 1px solid red;
 }
 html,
 body {
-  height: 100%;
+  width: 90vw;
+  font-size: 62.5%;
+}
+h1 {
+  font-family: 'Josefin Sans', serif;
+  font-size: 3.2rem;
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-title {
+  font-family: 'Josefin Sans', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.navIcons {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  width: 90vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+@headercolor {
+  background-color: #dab3bc;
 }
