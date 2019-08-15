@@ -1,0 +1,40 @@
+header{
+	background-color: @headercolor;
+	width:80vw;
+	height:35vh;
+	.centered();
+	.title{
+		width:40%;
+		display: flex;
+		flex-direction: column;
+		border: 1.5px solid black;
+		text-align: center;
+		.name{
+			flex-grow: 1.5;
+			padding: 2% 4% 1%;
+			border-bottom: 1.5px solid black;
+		}
+		.webDev{
+			display:flex;
+			justify-content: space-between;
+			margin:0;
+			h3{
+				flex-grow: 1.5;
+				padding:2%;
+			}
+			i{
+				padding:5%;
+				font-size: 2rem;				
+				border-left: 1.5px solid black;
+				.centered();
+			}
+		}
+	}
+
+	nav{
+	width:10vw;
+	.navIcons();}
+	
+	@media (max-width: 500px) {
+		width:90vw;}
+}

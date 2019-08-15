@@ -1,0 +1,45 @@
+html, body {
+	width: 80vw;
+	font-size:62.5%;
+	margin:0 auto;
+	@media (max-width: 500px) {
+		width:90vw;}
+}
+
+h1, h2, h3{
+	font-family: @titleFont;
+	text-transform:uppercase;
+	letter-spacing:0.5rem;
+	padding: .4em;
+	.centered();}
+
+h1{
+	font-size: 3rem;
+	letter-spacing:0.8rem;}
+
+h2{
+	font-size: 2rem;
+	line-height: 2.8rem;}
+
+h3{
+	font-size: 1.5rem;
+	letter-spacing:0.3rem;
+    // border:1px solid red;
+}
+
+h4{
+	font-family:'Josefin Slab', serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+    .centered();}
+    
+p, li{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5rem;
+    line-height:2.2rem;}
+    
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	// border:1px solid red;
+}
