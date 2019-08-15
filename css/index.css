@@ -134,13 +134,20 @@ html,
 body {
   width: 80vw;
   font-size: 62.5%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    width: 90vw;
+  }
 }
 h1,
 h2,
 h3 {
   font-family: 'Josefin Sans', serif;
   text-transform: uppercase;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.5rem;
   padding: 0.4em;
   display: flex;
   align-items: center;
@@ -153,13 +160,14 @@ h1 {
 }
 h2 {
   font-size: 2rem;
+  line-height: 2.8rem;
 }
 h3 {
   font-size: 1.5rem;
+  letter-spacing: 0.3rem;
 }
 h4 {
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
+  font-family: 'Josefin Slab', serif;
   font-size: 1.5rem;
   line-height: 2rem;
   display: flex;
@@ -184,19 +192,54 @@ li {
   text-align: center;
 }
 .navIcons {
+  text-decoration: none;
   color: black;
+  font-size: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 header {
   background-color: #dab3bc;
-  width: 90vw;
-  height: 20vh;
+  width: 80vw;
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+header .title {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid black;
+  text-align: center;
+}
+header .title .name {
+  padding: 2% 4%;
+  border-bottom: 1.5px solid black;
+}
+header .title .webDev {
+  display: flex;
+  justify-content: space-between;
+}
+header .title .webDev i {
+  font-size: 2rem;
+  border-left: 1.5px solid black;
+}
+header nav {
+  width: 30vw;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  header {
+    width: 90vw;
+  }
 }
 .profile {
   padding: 3% 13%;
@@ -211,4 +254,68 @@ header {
 .profile p {
   margin: 0 10%;
   text-align: center;
+}
+.main {
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 1.5px solid black;
+}
+.main h2 {
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+@media (max-width: 500px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.learned {
+  width: 33%;
+  border-right: 1.5px solid black;
+}
+@media (max-width: 500px) {
+  .learned {
+    width: 90vw;
+  }
+  .learned h3 {
+    padding: 3% 0 ;
+  }
+  .learned .list {
+    padding: 3% 0;
+  }
+}
+.learned .list {
+  padding: 10% 0 15%;
+}
+.learned .list h4 {
+  text-align: center;
+  padding: 0 0 5%;
+}
+.learned h3 {
+  padding: 5% 15%;
+  text-align: center;
+}
+.learned .education h3 {
+  padding: 15% 0 5%;
+}
+.learned .education h4 {
+  padding: 3% 10% 18%;
+  line-height: 3rem;
+  text-align: center;
+}
+.experience {
+  width: 66%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 6%;
+}
+.experience h3 {
+  padding: 8% 0% 1%;
+  text-align: center;
+}
+.experience h4 {
+  padding: 1% 0 5%;
+}
+.experience li {
+  padding: 1% 15%;
 }

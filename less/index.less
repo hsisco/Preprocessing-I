@@ -51,11 +51,16 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
+	// border:1px solid red;
 }
 
 html, body {
 	width: 80vw;
 	font-size:62.5%;
+	margin:0 auto;
+	@media (max-width: 500px) {
+		width:90vw;}
+
 }
 @titleFont:'Josefin Sans', serif;
 @headercolor:#dab3bc;
@@ -63,7 +68,7 @@ html, body {
 h1, h2, h3{
 	font-family: @titleFont;
 	text-transform:uppercase;
-	letter-spacing:0.6rem;
+	letter-spacing:0.5rem;
 	padding: .4em;
 	.centered();
 }
@@ -73,16 +78,19 @@ h1{
 }
 h2{
 	font-size: 2rem;
+	line-height: 2.8rem;
 }
 h3{
 	font-size: 1.5rem;
+	letter-spacing:0.3rem;
+	// border:1px solid red;
 }
 h4{
-	font-family: 'Lato', sans-serif;
-	font-style: italic;
+	font-family:'Josefin Slab', serif;
 	font-size: 1.5rem;
 	line-height: 2rem;
 	.centered();
+
 }
 p, li{
 	font-family: 'Lato', sans-serif;
@@ -101,19 +109,46 @@ p, li{
 	text-align: center;}
 
 .navIcons{
+	text-decoration:none;
 	color:black;
+	font-size:2rem;
 	display: flex;
 	align-items:center;
-	justify-content:space-between;}
+	justify-content:space-around;}
 
 
 @media (max-width: 500px) {}
 
 header{
 	background-color: @headercolor;
-	width:90vw;
-	height:20vh;
+	width:80vw;
+	height:40vh;
 	.centered();
+	.title{
+		width:40%;
+		display: flex;
+		flex-direction: column;
+		border: 1.5px solid black;
+		text-align: center;
+		.name{
+			padding: 2% 4%;
+			border-bottom: 1.5px solid black;
+		}
+		.webDev{
+			display:flex;
+			justify-content: space-between;
+			i{
+				font-size: 2rem;
+				border-left: 1.5px solid black;
+			}
+		}
+	}
+	nav{
+		width:30vw;
+		.navIcons();
+	}
+	@media (max-width: 500px) {
+		width:90vw;}
 }
 	
 .profile{
@@ -123,7 +158,75 @@ header{
 		padding:0 0 1.2em;
 	}
 	p{
-		margin: 0 10%;
-		text-align: center
+		margin:0 10%;
+		text-align: center;
+	}
+}
+.main{
+	display:flex;
+	margin: 0 auto;
+	border-bottom: 1.5px solid black;
+	h2{
+		border-top: 1.5px solid black;
+		border-bottom: 1.5px solid black;
+	}
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+
+}
+.learned{
+	width:33%;
+	border-right: 1.5px solid black;
+	@media (max-width: 500px) {
+		width:90vw;
+		h3{
+			padding:3% 0 ;
+		}
+		.list{
+			padding:3% 0;
+		}
+	}
+	.list{
+		padding:10% 0 15%;
+		// border:1px solid red;
+		h4{
+			text-align: center;
+			padding: 0 0 5%;
+		}
+	}
+	h3{
+		padding:5% 15%;
+		text-align: center;
+		// border:1px solid red;
+	}
+	.education {
+		h3{
+		padding:15% 0 5%;
+		}
+		h4{
+			padding:3% 10% 18%;
+			line-height: 3rem;
+			text-align:center;
+			// border:1px solid red;
+		}
+	}
+
+}
+	.experience{
+	width:66%;
+	display:flex;
+	flex-direction:column;
+	padding:0 0 6%;
+	h3{
+		padding:8% 0% 1%;
+		text-align: center;
+		// border:1px solid red;
+	}
+	h4{
+		padding: 1% 0 5%;
+	}
+	li{
+		padding:1% 15%;
 	}
 }
