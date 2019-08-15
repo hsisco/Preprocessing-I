@@ -51,45 +51,53 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border:1px solid red;
 }
 
 html, body {
-	width: 90vw;
+	width: 80vw;
 	font-size:62.5%;
 }
-@titleFont{
-	'Josefin Sans', serif;
-}
-@headercolor{
-	background-color:#dab3bc;
-}
+@titleFont:'Josefin Sans', serif;
+@headercolor:#dab3bc;
 
-h1{
+h1, h2, h3{
 	font-family: @titleFont;
+	text-transform:uppercase;
+	letter-spacing:0.6rem;
+	padding: .4em;
+	.centered();
+}
+h1{
 	font-size: 3rem;
+	letter-spacing:0.8rem;
 }
 h2{
-	font-family: @titleFont;
 	font-size: 2rem;
 }
 h3{
-	font-family: @titleFont;
 	font-size: 1.5rem;
 }
 h4{
-	font-family: @titleFont;
-	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	.centered();
+}
+p, li{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5rem;
+	line-height:2.2rem;
 }
 .centered{
-	display: flex;
+	display:flex;
 	align-items:center;
-	justify-content:center;}
+	justify-content:center;
+	flex-direction:column;
+}
 
 .section-title{
 	font-family: @titleFont;
-	text-transform:uppercase;
-	letter-spacing:0.1em;
 	text-align: center;}
 
 .navIcons{
@@ -105,13 +113,17 @@ header{
 	background-color: @headercolor;
 	width:90vw;
 	height:20vh;
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto;}
+	.centered();
+}
 	
-
-
-.name{
-
+.profile{
+	padding: 3% 13%;
+	.centered();
+	h2 {
+		padding:0 0 1.2em;
+	}
+	p{
+		margin: 0 10%;
+		text-align: center
+	}
 }

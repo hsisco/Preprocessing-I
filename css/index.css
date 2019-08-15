@@ -129,26 +129,58 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 html,
 body {
-  width: 90vw;
+  width: 80vw;
   font-size: 62.5%;
 }
-h1 {
+h1,
+h2,
+h3 {
   font-family: 'Josefin Sans', serif;
-  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  padding: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.8rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+p,
+li {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 .centered {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .section-title {
   font-family: 'Josefin Sans', serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
   text-align: center;
 }
 .navIcons {
@@ -158,13 +190,25 @@ h1 {
   justify-content: space-between;
 }
 header {
+  background-color: #dab3bc;
   width: 90vw;
   height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  flex-direction: column;
 }
-@headercolor {
-  background-color: #dab3bc;
+.profile {
+  padding: 3% 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile h2 {
+  padding: 0 0 1.2em;
+}
+.profile p {
+  margin: 0 10%;
+  text-align: center;
 }
