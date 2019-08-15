@@ -194,7 +194,7 @@ li {
 header {
   background-color: #dab3bc;
   width: 80vw;
-  height: 40vh;
+  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,7 +211,6 @@ header .title .name {
   flex-grow: 1.5;
   padding: 2% 4% 1%;
   border-bottom: 1.5px solid black;
-  border: 1px solid red;
 }
 header .title .webDev {
   display: flex;
@@ -221,12 +220,10 @@ header .title .webDev {
 header .title .webDev h3 {
   flex-grow: 1.5;
   padding: 2%;
-  border: 1px solid red;
 }
 header .title .webDev i {
   padding: 5%;
   font-size: 2rem;
-  border: 1px solid red;
   border-left: 1.5px solid black;
   display: flex;
   align-items: center;
