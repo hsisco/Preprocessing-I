@@ -1,0 +1,75 @@
+.main{
+	display:flex;
+	margin: 0 auto;
+	border-bottom: 1.5px solid black;
+	h2{
+		border-top: 1.5px solid black;
+		border-bottom: 1.5px solid black;
+	}
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+.learned{
+	width:33%;
+	border-right: 1.5px solid black;
+	@media (max-width: 500px) {
+		width:90vw;
+		h3{
+			padding:3% 0 ;
+		}
+		.list{
+			padding:3% 0;
+		}
+	}
+	.list{
+		padding:10% 0 15%;
+		// border:1px solid red;
+		h4{
+			text-align: center;
+			padding: 0 0 5%;
+		}
+	}
+	h3{
+		padding:5% 15%;
+		text-align: center;
+		// border:1px solid red;
+	}
+	.education {
+		h3{
+		padding:15% 0 5%;
+		}
+		h4{
+			padding:3% 10% 18%;
+			line-height: 3rem;
+			text-align:center;
+			// border:1px solid red;
+		}
+	}
+}
+    
+
+
+
+.experience{
+	width:66%;
+	display:flex;
+	flex-direction:column;
+	padding:0 0 6%;
+	h3{
+		padding:8% 0% 1%;
+		text-align: center;
+		// border:1px solid red;
+	}
+	h4{
+		padding: 1% 0 5%;
+	}
+	li{
+		padding:1% 15%;
+	}
+}

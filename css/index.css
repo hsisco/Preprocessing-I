@@ -1,3 +1,13 @@
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-title {
+  font-family: 'Josefin Sans', serif;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,10 +136,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
-* {
-  box-sizing: border-box;
-}
 html,
 body {
   width: 80vw;
@@ -181,23 +187,9 @@ li {
   font-size: 1.5rem;
   line-height: 2.2rem;
 }
-.centered {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.section-title {
-  font-family: 'Josefin Sans', serif;
-  text-align: center;
-}
-.navIcons {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
 }
 header {
   background-color: #dab3bc;
@@ -216,30 +208,54 @@ header .title {
   text-align: center;
 }
 header .title .name {
-  padding: 2% 4%;
+  flex-grow: 1.5;
+  padding: 2% 4% 1%;
   border-bottom: 1.5px solid black;
+  border: 1px solid red;
 }
 header .title .webDev {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+}
+header .title .webDev h3 {
+  flex-grow: 1.5;
+  padding: 2%;
+  border: 1px solid red;
 }
 header .title .webDev i {
+  padding: 5%;
   font-size: 2rem;
+  border: 1px solid red;
   border-left: 1.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 header nav {
-  width: 30vw;
+  width: 10vw;
   text-decoration: none;
   color: black;
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 2% 0 0;
 }
 @media (max-width: 500px) {
   header {
     width: 90vw;
   }
+}
+.navIcons {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2% 0 0;
 }
 .profile {
   padding: 3% 13%;
@@ -318,4 +334,22 @@ header nav {
 }
 .experience li {
   padding: 1% 15%;
+}
+footer {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer nav {
+  width: 10vw;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2% 0 0;
 }
